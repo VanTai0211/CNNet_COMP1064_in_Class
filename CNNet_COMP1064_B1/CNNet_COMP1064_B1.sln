@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CNNet_COMP1064_B1", "CNNet_COMP1064_B1\CNNet_COMP1064_B1.csproj", "{2CA244E0-83B0-45F7-AF00-603ABE669DCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CA244E0-83B0-45F7-AF00-603ABE669DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CA244E0-83B0-45F7-AF00-603ABE669DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CA244E0-83B0-45F7-AF00-603ABE669DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CA244E0-83B0-45F7-AF00-603ABE669DCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83AAA036-EF4E-457A-970D-7C190CAB4E41}
+	EndGlobalSection
+EndGlobal
