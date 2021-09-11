@@ -27,7 +27,6 @@ namespace B1_CNNet_COMP1064_in_Class.Controllers
         {
             return View();
         }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
