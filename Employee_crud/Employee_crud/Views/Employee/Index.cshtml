@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Employee_crud.Models.Employee>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdEmployee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NameEmployee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AgeEmployee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DailySalary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberDay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployeeWages)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdEmployee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NameEmployee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AgeEmployee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DailySalary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberDay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeeWages)
+            </td>
+            <td>
+                <a asp-controller="Employee" asp-action="Edit" asp-route-id="@item.IdEmployee" class="btn btn-info">Edit</a>
+                <a asp-controller="Employee" asp-action="Delete" asp-route-id="@item.IdEmployee" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
